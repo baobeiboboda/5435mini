@@ -1,4 +1,5 @@
 @import 'weui.wxss';
+@import 'wesntele.wxss';
 /**app.wxss**/
 .container {
   height: 100%;

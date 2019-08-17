@@ -22,12 +22,6 @@
         "iconPath": "img/timeline_81px.png"
       },
       {
-        "pagePath": "pages/project/allProject",
-        "text": "项目",
-        "iconPath": "img/timeline_81px.png"
-        
-      },
-      {
         "pagePath": "pages/na/index",
         "text": "我",
         "iconPath": "img/my.png",

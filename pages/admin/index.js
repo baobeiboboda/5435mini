@@ -87,7 +87,7 @@ Page({
     var test = this.data.testdata;
     this.setData({ hidden: false });
     wx.request({
-      url: 'http://192.168.2.14',
+      url: 'http:/www.wesntele.com',
       method:'POST',
       dataType:'json',
       success(res){
@@ -95,12 +95,11 @@ Page({
         test = test.concat(res.data.data)
       },
       fail(res){
-
+        console.log(1);
       },
       complete(){
         that.setData({ testdata: test });
-        console.log(test);
-        that.setData({ hidden: false });
+        that.setData({ hidden: true });
       }
     })
     // test = test.concat([
