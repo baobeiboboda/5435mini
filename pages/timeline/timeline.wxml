@@ -1,3 +1,9 @@
+<view class="content-header">
+  <h1>
+    项目名称
+    <small>Control panel</small>
+  </h1>
+</view>
 <view class='content'>
   <view class='timeline'>
     <view class="timeline-li time-label">
