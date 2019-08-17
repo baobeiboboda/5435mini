@@ -1,0 +1,95 @@
+<view class="content">
+      <!-- <view class="box" bindtap="test" data-test="1922-1345-6-7eu">
+        <view class="box-header with-border">
+          <view class="box-title">测试项目名称</view>
+          <view class="box-tools pull-right">
+            <text class="time">任务执行完毕</text>
+          </view>
+        </view>
+        <view class="box-body">
+          <view class="form-group">
+            <label class="col-sm-4 control-label">任务名称</label>
+          </view>
+        </view>
+        <view class="box-footer">
+          <button class="btn btn-success">同  意</button>
+          <button class="btn btn-danger pull-right">退  回</button>
+        </view>
+      </view> 
+      <view class="box" bindtap="test" data-test="1922-1345-6-7eu">
+        <view class="box-header with-border">
+          <view class="box-title">测试项目名称</view>
+          <view class="box-tools pull-right">
+            <text class="time">任务执行完毕</text>
+          </view>
+        </view>
+        <view class="box-body">
+          <view class="form-group">
+            <label class="col-sm-4 control-label">任务名称</label>
+          </view>
+        </view>
+        <view class="box-footer">
+          <button class="btn btn-success">同  意</button>
+          <button class="btn btn-danger pull-right">退  回</button>
+        </view>
+      </view> 
+      <view class="box" bindtap="test" data-test="1922-1345-6-7eu">
+        <view class="box-header with-border">
+          <view class="box-title">测试项目名称</view>
+          <view class="box-tools pull-right">
+            <text class="time">任务执行完毕</text>
+          </view>
+        </view>
+        <view class="box-body">
+          <view class="form-group">
+            <label class="col-sm-4 control-label">任务名称</label>
+          </view>
+        </view>
+        <view class="box-footer">
+          <button class="btn btn-success">同  意</button>
+          <button class="btn btn-danger pull-right">退  回</button>
+        </view>
+      </view>
+      <view class="box" bindtap="test" data-test="1922-1345-6-7eu">
+        <view class="box-header with-border">
+          <view class="box-title">测试项目名称</view>
+          <view class="box-tools pull-right">
+            <text class="time">任务执行完毕</text>
+          </view>
+        </view>
+        <view class="box-body">
+          <view class="form-group">
+            <label class="col-sm-4 control-label">任务名称</label>
+          </view>
+        </view>
+        <view class="box-footer">
+          <button class="btn btn-success">同  意</button>
+          <button class="btn btn-danger pull-right">退  回</button>
+        </view>
+      </view> -->
+      <!-- test for -->
+      <view class="box" wx:for="{{testdata}}" bindtap="test" data-test="{{item.id}}">
+        <view class="box-header with-border">
+          <view class="box-title">{{item.id}}</view>
+          <view class="box-tools pull-right">
+            <text class="time">{{item.id}}</text>
+          </view>
+        </view>
+        <view class="box-body">
+          <view class="form-group">
+            <label class="col-sm-4 control-label">{{item.id}}</label>
+          </view>
+        </view>
+        <view class="box-footer">
+          <button class="btn btn-success">同  意</button>
+          <button class="btn btn-danger pull-right">退  回</button>
+        </view>
+      </view>
+      <!-- test end for -->
+</view>
+<view class="body-view" hidden="{{hidden}}">
+        <view class="weui-loadmore">
+            <view class="weui-loading"></view>
+            <view class="weui-loadmore__tips">正在加载</view>
+        </view>
+    </view>
