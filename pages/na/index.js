@@ -2,32 +2,46 @@ var sliderWidth = 96; // 需要设置slider的宽度，用于计算中间位置
 
 Page({
   data: {
-    tabs: ["选项一", "选项二", "选项三","选项四"],
+    tabs: ["我的任务", "待审核", "已通过", "已退回"],
     activeIndex: 0,
     sliderOffset: 0,
     sliderLeft: 0
   },
-  onLoad: function () {
+  onLoad: function() {
     var that = this;
     wx.getSystemInfo({
-      success: function (res) {
+      success: function(res) {
         that.setData({
           sliderLeft: (res.windowWidth / that.data.tabs.length - sliderWidth) / 3,
           sliderOffset: res.windowWidth / that.data.tabs.length * that.data.activeIndex
         });
       }
     });
+    //todo 我的任务列表
   },
-  tabClick: function (e) {
+  tabClick: function(e) {
     this.setData({
       sliderOffset: e.currentTarget.offsetLeft,
       activeIndex: e.currentTarget.id
     });
   },
-  onLoad: function(){
-    
+
+  test: function(e){
+    var index = this.data.activeIndex;
+    switch(index){
+      case 1:
+    }
+    this.testFunciton();
   },
-  onPullDownRefresh: function (e) {
+
+  testFunciton: function(){
+    console.log('success');
+  },
+
+  onLoad: function() {
+
+  },
+  onPullDownRefresh: function(e) {
     console.log(e);
     wx.stopPullDownRefresh();
   }

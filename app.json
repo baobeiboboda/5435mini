@@ -18,12 +18,12 @@
     "list": [
       {
         "pagePath": "pages/admin/index",
-        "text": "首页",
+        "text": "项目",
         "iconPath": "img/timeline_81px.png"
       },
       {
         "pagePath": "pages/na/index",
-        "text": "我",
+        "text": "我的",
         "iconPath": "img/my.png",
         "selectedIconPath" : "img/my-s.png"
       }

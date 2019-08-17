@@ -1,74 +1,129 @@
 <view class="page">
-    <view class="page__bd">
-        <view class="weui-tab">
-            <view class="weui-navbar">
-                <block wx:for="{{tabs}}" wx:key="*this">
-                    <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
-                        <view class="weui-navbar__title">{{item}}</view>
-                    </view>
-                </block>
-                <view class="weui-navbar__slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
-            </view>
-            <view class="weui-tab__panel">
-                <view class="weui-tab__content" hidden="{{activeIndex != 0}}">
-                  <view class='content'>
-                    <view class='timeline'>
-                      <view class="timeline-li time-label">
-                        <view class="span bg-red">10 Feb. 2014</view>
-                      </view>
-                      <view class='li'>
-                        <view class="i fa fa-envelope bg-blue">123</view>
-                        <view class="timeline-item">
-                          <view class="timeline-header">Support Team sent you an email</view>
-                          <view class="timeline-body">
-                            Etsy doostang zoodles disqus groupon greplin oooj voxy zoodles,weebly ning heekya handango imeem plugg dopplr jibjab, movityjajah plickers sifteo edmodo ifttt zimbra. Babblely odeo kaboodlequora plaxo ideeli hulu weebly balihoo...
-                          </view>
-                          <view class="timeline-footer">
-                            <a class="btn btn-primary btn-xs">Read more</a>
-                            <a class="btn btn-danger btn-xs">Delete</a>
-                          </view>
-                        </view>
-                      </view>
-                      <view class="timeline-li time-label">
-                        <view class="span bg-red">10 Feb. 2014</view>
-                      </view>
-                      <view class='li'>
-                        <view class="i fa fa-envelope bg-blue">123</view>
-                        <view class="timeline-item">
-                          <view class="timeline-header">Support Team sent you an email</view>
-                          <view class="timeline-body">
-                            Etsy doostang zoodles disqus groupon greplin oooj voxy zoodles,weebly ning heekya handango imeem plugg dopplr jibjab, movityjajah plickers sifteo edmodo ifttt zimbra. Babblely odeo kaboodlequora plaxo ideeli hulu weebly balihoo...
-                          </view>
-                          <view class="timeline-footer">
-                            <a class="btn btn-primary btn-xs">Read more</a>
-                            <a class="btn btn-danger btn-xs">Delete</a>
-                          </view>
-                        </view>
-                      </view>
-                      <view class='li'>
-                        <view class="i fa fa-envelope bg-blue">123</view>
-                        <view class="timeline-item">
-                          <view class="timeline-header">Support Team sent you an email</view>
-                          <view class="timeline-body">
-                            Etsy doostang zoodles disqus groupon greplin oooj voxy zoodles,weebly ning heekya handango imeem plugg dopplr jibjab, movityjajah plickers sifteo edmodo ifttt zimbra. Babblely odeo kaboodlequora plaxo ideeli hulu weebly balihoo...
-                          </view>
-                          <view class="timeline-footer">
-                            <a class="btn btn-primary btn-xs">Read more</a>
-                            <a class="btn btn-danger btn-xs">Delete</a>
-                          </view>
-                        </view>
-                      </view>
-                      <view class='li-end'>
-                        <view class="i fa fa-clock-o bg-gray">end</view>
-                      </view>
-                    </view>
+  <view class="page__bd">
+    <view class="weui-tab">
+      <view class="weui-navbar">
+        <block wx:for="{{tabs}}" wx:key="*this">
+          <view id="{{index}}" class="weui-navbar__item {{activeIndex == index ? 'weui-bar__item_on' : ''}}" bindtap="tabClick">
+            <view class="weui-navbar__title">{{item}}</view>
+          </view>
+        </block>
+        <view class="weui-navbar__slider" style="left: {{sliderLeft}}px; transform: translateX({{sliderOffset}}px); -webkit-transform: translateX({{sliderOffset}}px);"></view>
+      </view>
+      <view class="weui-tab__panel">
+        <view class="weui-tab__content" hidden="{{activeIndex != 0}}">
+          <view class='content'>
+            <view class='timeline'>
+              <view class="timeline-li time-label">
+                <view class="span bg-red">10 Feb. 2014</view>
+              </view>
+              <view class='li' bindtap="test">
+                <view class="i fa fa-envelope bg-blue">123</view>
+                <view class="timeline-item">
+                  <view class="timeline-header">Support Team sent you an email</view>
+                  <view class="timeline-body">
+                    Etsy doostang zoodles disqus groupon greplin oooj voxy zoodles,weebly ning heekya handango imeem plugg dopplr jibjab, movityjajah plickers sifteo edmodo ifttt zimbra. Babblely odeo kaboodlequora plaxo ideeli hulu weebly balihoo...
                   </view>
-                
+                  <view class="timeline-footer">
+                    <a class="btn btn-primary btn-xs">Read more</a>
+                    <a class="btn btn-danger btn-xs">Delete</a>
+                  </view>
                 </view>
-                <view class="weui-tab__content" hidden="{{activeIndex != 1}}">选项二的内容</view>
-                <view class="weui-tab__content" hidden="{{activeIndex != 2}}">选项三的内容</view>
-                <view class="weui-tab__content" hidden="{{activeIndex != 3}}">选项四的内容</view>
+              </view>
+              <view class="timeline-li time-label">
+                <view class="span bg-red">10 Feb. 2014</view>
+              </view>
+              <view class='li'>
+                <view class="i fa fa-envelope bg-blue">123</view>
+                <view class="timeline-item">
+                  <view class="timeline-header">Support Team sent you an email</view>
+                  <view class="timeline-body">
+                    Etsy doostang zoodles disqus groupon greplin oooj voxy zoodles,weebly ning heekya handango imeem plugg dopplr jibjab, movityjajah plickers sifteo edmodo ifttt zimbra. Babblely odeo kaboodlequora plaxo ideeli hulu weebly balihoo...
+                  </view>
+                  <view class="timeline-footer">
+                    <a class="btn btn-primary btn-xs">Read more</a>
+                    <a class="btn btn-danger btn-xs">Delete</a>
+                  </view>
+                </view>
+              </view>
+              <view class='li'>
+                <view class="i fa fa-envelope bg-blue">123</view>
+                <view class="timeline-item">
+                  <view class="timeline-header">Support Team sent you an email</view>
+                  <view class="timeline-body">
+                    Etsy doostang zoodles disqus groupon greplin oooj voxy zoodles,weebly ning heekya handango imeem plugg dopplr jibjab, movityjajah plickers sifteo edmodo ifttt zimbra. Babblely odeo kaboodlequora plaxo ideeli hulu weebly balihoo...
+                  </view>
+                  <view class="timeline-footer">
+                    <a class="btn btn-primary btn-xs">Read more</a>
+                    <a class="btn btn-danger btn-xs">Delete</a>
+                  </view>
+                </view>
+              </view>
+              <view class='li-end'>
+                <view class="i fa fa-clock-o bg-gray">end</view>
+              </view>
             </view>
+          </view>
+
         </view>
+        <view class="weui-tab__content" hidden="{{activeIndex != 1}}">
+          <view class='content'>
+            <view class='timeline'>
+              <view class="timeline-li time-label">
+                <view class="span bg-red">10 Feb. 2014</view>
+              </view>
+              <view class='li' bindtap="test">
+                <view class="i fa fa-envelope bg-blue">123</view>
+                <view class="timeline-item">
+                  <view class="timeline-header">Support Team sent you an email</view>
+                  <view class="timeline-body">
+                    Etsy doostang zoodles disqus groupon greplin oooj voxy zoodles,weebly ning heekya handango imeem plugg dopplr jibjab, movityjajah plickers sifteo edmodo ifttt zimbra. Babblely odeo kaboodlequora plaxo ideeli hulu weebly balihoo...
+                  </view>
+                  <view class="timeline-footer">
+                    <a class="btn btn-primary btn-xs">Read more</a>
+                    <a class="btn btn-danger btn-xs">Delete</a>
+                  </view>
+                </view>
+              </view>
+              <view class="timeline-li time-label">
+                <view class="span bg-red">10 Feb. 2014</view>
+              </view>
+              <view class='li'>
+                <view class="i fa fa-envelope bg-blue">123</view>
+                <view class="timeline-item">
+                  <view class="timeline-header">Support Team sent you an email</view>
+                  <view class="timeline-body">
+                    Etsy doostang zoodles disqus groupon greplin oooj voxy zoodles,weebly ning heekya handango imeem plugg dopplr jibjab, movityjajah plickers sifteo edmodo ifttt zimbra. Babblely odeo kaboodlequora plaxo ideeli hulu weebly balihoo...
+                  </view>
+                  <view class="timeline-footer">
+                    <a class="btn btn-primary btn-xs">Read more</a>
+                    <a class="btn btn-danger btn-xs">Delete</a>
+                  </view>
+                </view>
+              </view>
+              <view class='li'>
+                <view class="i fa fa-envelope bg-blue">123</view>
+                <view class="timeline-item">
+                  <view class="timeline-header">Support Team sent you an email</view>
+                  <view class="timeline-body">
+                    Etsy doostang zoodles disqus groupon greplin oooj voxy zoodles,weebly ning heekya handango imeem plugg dopplr jibjab, movityjajah plickers sifteo edmodo ifttt zimbra. Babblely odeo kaboodlequora plaxo ideeli hulu weebly balihoo...
+                  </view>
+                  <view class="timeline-footer">
+                    <a class="btn btn-primary btn-xs">Read more</a>
+                    <a class="btn btn-danger btn-xs">Delete</a>
+                  </view>
+                </view>
+              </view>
+              <view class='li-end'>
+                <view class="i fa fa-clock-o bg-gray">end</view>
+              </view>
+            </view>
+          </view>
+
+        </view>
+        <!-- <view class="weui-tab__content" hidden="{{activeIndex != 1}}">选项二的内容</view> -->
+        <view class="weui-tab__content" hidden="{{activeIndex != 2}}">选项三的内容</view>
+        <view class="weui-tab__content" hidden="{{activeIndex != 3}}">选项四的内容</view>
+      </view>
     </view>
+  </view>
 </view>
