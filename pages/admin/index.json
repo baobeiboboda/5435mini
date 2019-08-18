@@ -3,7 +3,7 @@
     
   },
   "enablePullDownRefresh": true,
-  "onReachBottomDistance": 500,
-  "backgroundTextStyle":"dark"
+  "onReachBottomDistance": 500
+  
   
 }

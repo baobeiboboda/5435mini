@@ -32,23 +32,23 @@ Page({
       }
     ]
   },
-  onShow:function() {
-   this.getItem();
+  onShow: function() {
+    this.getItem();
   },
   onLoad: function() {
     var that = this;
     var tmp = "pageData[0].item";
-    
+
     wx.getSystemInfo({
       success: function(res) {
         that.setData({
           sliderLeft: (res.windowWidth / that.data.tabs.length - sliderWidth) / 3,
           sliderOffset: res.windowWidth / that.data.tabs.length * that.data.activeIndex
         });
-        
+
       }
     });
-    
+
   },
 
   //todo 获取我的任务列表
@@ -59,14 +59,16 @@ Page({
     var url = this.data.pageData[index].url
     nowPage = nowPage + 1;
     this.setData({
-      [tmp]:nowPage
+      [tmp]: nowPage
     })
     wx.request({
       url: url,
       method: 'POST',
       dataType: 'json',
       contentType: 'application/json',
-      data:{page: nowPage},
+      data: {
+        page: nowPage
+      },
       success(res) {
         // that.setData({
         //   [tmp]: res.data.data
@@ -77,8 +79,7 @@ Page({
           //[tmp]: [1]
         })
       },
-      complete(res) {
-      }
+      complete(res) {}
     });
   },
 

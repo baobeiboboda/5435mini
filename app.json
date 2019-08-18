@@ -8,24 +8,26 @@
     "pages/timeline/timeline"
   ],
   "window": {
-    "backgroundTextStyle": "light",
+    "backgroundTextStyle": "dark",
     "navigationBarBackgroundColor": "#367fa9",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "5436项目管理",
     "navigationBarTextStyle": "black",
     "backgroundColor": "#ecf0f5"
   },
   "tabBar": {
+    "selectedColor":"#367fa9",
     "list": [
       {
         "pagePath": "pages/admin/index",
         "text": "项目",
-        "iconPath": "img/timeline_81px.png"
+        "iconPath": "img/project.png",
+        "selectedIconPath": "img/project-selected.png"
       },
       {
         "pagePath": "pages/na/index",
         "text": "我的",
-        "iconPath": "img/my.png",
-        "selectedIconPath" : "img/my-s.png"
+        "iconPath": "img/myNew.png",
+        "selectedIconPath" : "img/myNew-selected.png"
       }
     ]
   },
