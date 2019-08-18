@@ -8,70 +8,79 @@ Page({
     sliderLeft: 0,
     pageData: [{
         "item": [],
-        "url": "",
-        "nextItemId": ""
+        "url": "123456",
+        "nowPage": 0,
+        "firstId": ""
       },
       {
         "item": [],
         "url": "",
-        "nextItemId": ""
+        "nowPage": 0,
+        "firstId": ""
       },
       {
         "item": [],
         "url": "",
-        "nextItemId": ""
+        "nowPage": 0,
+        "firstId": ""
       },
       {
         "item": [],
         "url": "",
-        "nextItemId": ""
+        "nowPage": 0,
+        "firstId": ""
       }
     ]
   },
-
-
-
+  onShow:function() {
+   this.getItem();
+  },
   onLoad: function() {
     var that = this;
+    var tmp = "pageData[0].item";
+    
     wx.getSystemInfo({
       success: function(res) {
         that.setData({
           sliderLeft: (res.windowWidth / that.data.tabs.length - sliderWidth) / 3,
           sliderOffset: res.windowWidth / that.data.tabs.length * that.data.activeIndex
         });
+        
       }
     });
-
+    
   },
 
   //todo 获取我的任务列表
-  getItem: function(url) {
+  getItem: function(nowPage = 0) {
     var index = this.data.activeIndex
     var that = this;
     var tmp = "pageData[" + index + "].item";
+    var url = this.data.pageData[index].url
+    nowPage = nowPage + 1;
+    this.setData({
+      [tmp]:nowPage
+    })
     wx.request({
       url: url,
       method: 'POST',
       dataType: 'json',
       contentType: 'application/json',
+      data:{page: nowPage},
       success(res) {
-        that.setData({
-          [tmp]: res.data.data
-        })
+        // that.setData({
+        //   [tmp]: res.data.data
+        // })
       },
       fail(res) {
         that.setData({
-          [tmp]: [1]
+          //[tmp]: [1]
         })
       },
       complete(res) {
-        console.log(that.data.pageData[0].item)
       }
     });
   },
-
-  //todo上滑动继续请求数据(分页请求)
-
 
   //todo 顶部导航列表切换方法
   tabClick: function(e) {
@@ -81,23 +90,12 @@ Page({
     });
   },
 
-  test: function(e) {
-    var index = this.data.activeIndex;
-    switch (index) {
-      case 1:
-    }
-    this.testFunciton();
-  },
-
-  testFunciton: function() {
-    console.log('success');
-  },
 
   onLoad: function() {
-    
+
   },
-  onPullDownRefresh: function(e) {
-    console.log(e);
+  onPullDownRefresh: function() {
+    this.getItem();
     wx.stopPullDownRefresh();
   }
 });

@@ -16,7 +16,7 @@
               <view class="timeline-li time-label">
                 <view class="span bg-red">10 Feb. 2014</view>
               </view>
-              <view class='li' bindtap="test">
+              <view class='li' >
                 <view class="i fa fa-envelope bg-blue">123</view>
                 <view class="timeline-item">
                   <view class="timeline-header">Support Team sent you an email</view>
