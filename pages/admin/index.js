@@ -22,8 +22,19 @@ Page({
   },
   test: function(event){
     // console.log(event.currentTarget.dataset.test)
-    wx.navigateTo({
-      url: '../timeline/timeline?id='+event.currentTarget.dataset.test
+    // wx.navigateTo({
+    //   url: '../timeline/timeline?id='+event.currentTarget.dataset.test
+    // })
+    wx.request({
+      url: 'http://192.168.2.14',
+      success(res){
+        console.log('success');
+        console.log(res)
+      },
+      fail(res){
+        console.log('error');
+        console.log(res);
+      }
     })
   },
   /**
