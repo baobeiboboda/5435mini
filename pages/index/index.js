@@ -3,12 +3,7 @@
 const app = getApp()
 
 Page({
-  data: {
-    motto: 'Hello World',
-    userInfo: {},
-    hasUserInfo: false,
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
-  },
+  data: {},
   //事件处理函数
   bindViewTap: function() {
     wx.navigateTo({
@@ -16,9 +11,13 @@ Page({
     })
   },
   onLoad: function(e) {
-    console.log(e)
-    wx.switchTab({
-      url: '../admin/index',
+    wx.login({
+      success(res) {
+        app.globalData.accessToken = res.code;
+        wx.switchTab({
+          url: '../admin/index',
+        })
+      }
     })
   },
 })

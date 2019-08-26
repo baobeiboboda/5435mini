@@ -8,6 +8,6 @@ App({
 
   },
   globalData: {
-    userInfo: null
+    accessToken: ""
   }
 })

@@ -172,22 +172,24 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   font-size: 24rpx;
 }
 
-
 .col-sm-2 {
-    width: 16.66666667%;
-}
-.col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9 {
-    float: left;
-}
-.col-sm-10 {
-    width: 83.33333333%;
+  width: 16.66666667%;
 }
 
-.col-md-12{
-    position: relative;
-    min-height: 2rpx;
-    padding-right: 30rpx;
-    padding-left: 30rpx;
+.col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4,
+.col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9 {
+  float: left;
+}
+
+.col-sm-10 {
+  width: 83.33333333%;
+}
+
+.col-md-12 {
+  position: relative;
+  min-height: 2rpx;
+  padding-right: 30rpx;
+  padding-left: 30rpx;
 }
 
 /* .dl {
@@ -204,21 +206,23 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 } */
 
 .dl {
-    margin-top: 0;
-    margin-bottom: 40rpx;
+  margin-top: 0;
+  margin-bottom: 40rpx;
 }
 
-.dt{
-    float: left;
-    width: 160rpx;
-    clear: left;
-    text-align: right;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-        box-sizing: border-box;
-            font-weight: 700;
+.dt {
+  float: left;
+  width: 160rpx;
+  clear: left;
+  text-align: right;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  box-sizing: border-box;
+  font-weight: 700;
+  margin-left: 100rpx;
 }
-.dd{
-  margin-left: 200rpx;
+
+.dd {
+  margin-left: 300rpx;
 }

@@ -10,15 +10,22 @@
       <view class="span bg-red">10 Feb. 2014</view>
     </view>
     <view class='li'>
-      <view class="i fa fa-envelope bg-blue">123</view>
+      <view class="i fa fa-envelope bg-blue"></view>
       <view class="timeline-item">
-        <view class="timeline-header">Support Team sent you an email</view>
+        <view class="timeline-header">任务名称</view>
         <view class="timeline-body">
-          Etsy doostang zoodles disqus groupon greplin oooj voxy zoodles,weebly ning heekya handango imeem plugg dopplr jibjab, movityjajah plickers sifteo edmodo ifttt zimbra. Babblely odeo kaboodlequora plaxo ideeli hulu weebly balihoo...
-        </view>
-        <view class="timeline-footer">
-          <a class="btn btn-primary btn-xs">Read more</a>
-          <a class="btn btn-danger btn-xs">Delete</a>
+          <view class="dl">
+        <view class="dt">工期</view>
+        <view class="dd"> 天</view>
+        <view class="dt">结束时间</view>
+        <view class="dd">2019-04-08</view>
+        <view class="dt">执行人</view>
+        <view class="dd">雷先鹏</view>
+        <view class="dt">监督人</view>
+        <view class="dd">雷先鹏</view>
+        <view class="dt">告知人</view>
+        <view class="dd">雷先鹏</view>
+      </view>
         </view>
       </view>
     </view>

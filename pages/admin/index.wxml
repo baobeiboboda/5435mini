@@ -89,59 +89,59 @@
   </view> -->
 
   <view class="box" bindtap="test" data-test="1922-1345-6-7eu">
-            <view class="box-header with-border">
-              <view class="box-title">测试项目名称</view>
-              <!-- <view class="box-tools pull-right">
+    <view class="box-header with-border">
+      <view class="box-title">测试项目名称</view>
+      <!-- <view class="box-tools pull-right">
                 <text class="time">任务执行完毕</text>
               </view> -->
-            </view>
-            <view class="box-body ">
-              <view class="dl">
-                <view class="dt">任务名称</view>
-                <view class="dd">施工图资料收集</view>
-                <view class="dt">完成时间</view>
-                <view class="dd">2019-08-15</view>
-                <view class="dt">审核人</view>
-                <view class="dd">系统管理员</view>
-              </view>
-            </view>
-          </view>
-          <view class="box" bindtap="test" data-test="1922-1345-6-7eu">
-            <view class="box-header with-border">
-              <view class="box-title">测试项目名称</view>
-              <!-- <view class="box-tools pull-right">
+    </view>
+    <view class="box-body ">
+      <view class="dl">
+        <view class="dt">所属公司</view>
+        <view class="dd">河南公司</view>
+        <view class="dt">合同类型</view>
+        <view class="dd">基础设施</view>
+        <view class="dt">项目负责人</view>
+        <view class="dd">雷先鹏</view>
+      </view>
+    </view>
+  </view>
+  <view class="box" bindtap="test" data-test="1922-1345-6-7eu">
+    <view class="box-header with-border">
+      <view class="box-title">测试项目名称</view>
+      <!-- <view class="box-tools pull-right">
                 <text class="time">任务执行完毕</text>
               </view> -->
-            </view>
-            <view class="box-body ">
-              <view class="dl">
-                <view class="dt">任务名称</view>
-                <view class="dd">施工图资料收集</view>
-                <view class="dt">完成时间</view>
-                <view class="dd">2019-08-15</view>
-                <view class="dt">审核人</view>
-                <view class="dd">系统管理员</view>
-              </view>
-            </view>
-          </view>
-          <view class="box" bindtap="test" data-test="1922-1345-6-7eu">
-            <view class="box-header with-border">
-              <view class="box-title">测试项目名称</view>
-              <!-- <view class="box-tools pull-right">
+    </view>
+    <view class="box-body ">
+      <view class="dl">
+        <view class="dt">所属公司</view>
+        <view class="dd">河南公司</view>
+        <view class="dt">合同类型</view>
+        <view class="dd">基础设施</view>
+        <view class="dt">项目负责人</view>
+        <view class="dd">雷先鹏</view>
+      </view>
+    </view>
+  </view>
+  <view class="box" bindtap="test" data-test="1922-1345-6-7eu">
+    <view class="box-header with-border">
+      <view class="box-title">测试项目名称</view>
+      <!-- <view class="box-tools pull-right">
                 <text class="time">任务执行完毕</text>
               </view> -->
-            </view>
-            <view class="box-body ">
-              <view class="dl">
-                <view class="dt">任务名称</view>
-                <view class="dd">施工图资料收集</view>
-                <view class="dt">完成时间</view>
-                <view class="dd">2019-08-15</view>
-                <view class="dt">审核人</view>
-                <view class="dd">系统管理员</view>
-              </view>
-            </view>
-          </view>
+    </view>
+    <view class="box-body ">
+      <view class="dl">
+        <view class="dt">所属公司</view>
+        <view class="dd">河南公司</view>
+        <view class="dt">合同类型</view>
+        <view class="dd">基础设施</view>
+        <view class="dt">项目负责人</view>
+        <view class="dd">雷先鹏</view>
+      </view>
+    </view>
+  </view>
   <!-- test end for -->
 </view>
 <view class="body-view" hidden="{{hidden}}">

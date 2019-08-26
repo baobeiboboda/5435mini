@@ -12,68 +12,19 @@
       <view class="weui-tab__panel">
         <!-- start activeIndex 0 -->
         <view class="weui-tab__content content" hidden="{{activeIndex != 0}}">
-          <!-- <view class='content'>
-            <view class='timeline'>
-              <view class="timeline-li time-label">
-                <view class="span bg-red">10 Feb. 2014</view>
-              </view>
-              <view class='li'>
-                <view class="i fa fa-envelope bg-blue">123</view>
-                <view class="timeline-item">
-                  <view class="timeline-header">Support Team sent you an email</view>
-                  <view class="timeline-body">
-                    Etsy doostang zoodles disqus groupon greplin oooj voxy zoodles,weebly ning heekya handango imeem plugg dopplr jibjab, movityjajah plickers sifteo edmodo ifttt zimbra. Babblely odeo kaboodlequora plaxo ideeli hulu weebly balihoo...
-                  </view>
-                  <view class="timeline-footer">
-                    <a class="btn btn-primary btn-xs">Read more</a>
-                    <a class="btn btn-danger btn-xs">Delete</a>
-                  </view>
-                </view>
-              </view>
-              <view class="timeline-li time-label">
-                <view class="span bg-red">10 Feb. 2014</view>
-              </view>
-              <view class='li'>
-                <view class="i fa fa-envelope bg-blue">123</view>
-                <view class="timeline-item">
-                  <view class="timeline-header">Support Team sent you an email</view>
-                  <view class="timeline-body">
-                    Etsy doostang zoodles disqus groupon greplin oooj voxy zoodles,weebly ning heekya handango imeem plugg dopplr jibjab, movityjajah plickers sifteo edmodo ifttt zimbra. Babblely odeo kaboodlequora plaxo ideeli hulu weebly balihoo...
-                  </view>
-                  <view class="timeline-footer">
-                    <a class="btn btn-primary btn-xs">Read more</a>
-                    <a class="btn btn-danger btn-xs">Delete</a>
-                  </view>
-                </view>
-              </view>
-              <view class='li'>
-                <view class="i fa fa-envelope bg-blue">123</view>
-                <view class="timeline-item">
-                  <view class="timeline-header">Support Team sent you an email</view>
-                  <view class="timeline-body">
-                    Etsy doostang zoodles disqus groupon greplin oooj voxy zoodles,weebly ning heekya handango imeem plugg dopplr jibjab, movityjajah plickers sifteo edmodo ifttt zimbra. Babblely odeo kaboodlequora plaxo ideeli hulu weebly balihoo...
-                  </view>
-                  <view class="timeline-footer">
-                    <a class="btn btn-primary btn-xs">Read more</a>
-                    <a class="btn btn-danger btn-xs">Delete</a>
-                  </view>
-                </view>
-              </view>
-              <view class='li-end'>
-                <view class="i fa fa-clock-o bg-gray">end</view>
-              </view>
-            </view>
-          </view> -->
           <view class="box" bindtap="test" data-test="1922-1345-6-7eu">
             <view class="box-header with-border">
               <view class="box-title has-success">这里是项目名称</view>
               <view class="box-tools pull-right">
-                <text class="time">超期时间:2019-07-24</text>
+                <text class="time"></text>
               </view>
             </view>
             <view class="box-body">
-              <view class="form-group">
-                <label class="col-sm-4 control-label">任务名称</label>
+              <view class="dl">
+                <view class="dt">任务名称</view>
+                <view class="dd">任务名称</view>
+                <view class="dt">超期时间</view>
+                <view class="dd">超期时间</view>
               </view>
             </view>
             <!-- todo 判断是否显示执行按钮 -->
@@ -85,12 +36,15 @@
             <view class="box-header with-border">
               <view class="box-title has-warning">这里是项目名称</view>
               <view class="box-tools pull-right">
-                <text class="time">超期时间:2019-07-24</text>
+                <text class="time"></text>
               </view>
             </view>
             <view class="box-body">
-              <view class="form-group">
-                <label class="col-sm-4 control-label">任务名称</label>
+              <view class="dl">
+                <view class="dt">任务名称</view>
+                <view class="dd">任务名称</view>
+                <view class="dt">超期时间</view>
+                <view class="dd">超期时间</view>
               </view>
             </view>
             <!-- todo 判断是否显示执行按钮 -->
@@ -102,12 +56,15 @@
             <view class="box-header with-border">
               <view class="box-title has-error">这里是项目名称</view>
               <view class="box-tools pull-right">
-                <text class="time">超期时间:2019-07-24</text>
+                <text class="time"></text>
               </view>
             </view>
             <view class="box-body">
-              <view class="form-group">
-                <label class="col-sm-4 control-label">任务名称</label>
+              <view class="dl">
+                <view class="dt">任务名称</view>
+                <view class="dd">任务名称</view>
+                <view class="dt">超期时间</view>
+                <view class="dd">超期时间</view>
               </view>
             </view>
             <!-- todo 判断是否显示执行按钮 -->
@@ -127,8 +84,11 @@
               </view> -->
             </view>
             <view class="box-body">
-              <view class="form-group">
-                <label class="col-sm-4 control-label">任务名称</label>
+              <view class="dl">
+                <view class="dt">任务名称</view>
+                <view class="dd">任务名称</view>
+                <view class="dt">任务执行人</view>
+                <view class="dd">执行人</view>
               </view>
             </view>
             <view class="box-footer">
