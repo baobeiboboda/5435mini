@@ -27,22 +27,10 @@ Page({
     console.log(app.globalData.accessToken);
   },
   test: function(event) {
-    console.log(1);
     console.log(event.currentTarget.dataset.test)
     wx.navigateTo({
       url: '../timeline/timeline?id=' + event.currentTarget.dataset.test
     })
-    // wx.request({
-    //   url: 'http://192.168.2.14',
-    //   success(res){
-    //     console.log('success');
-    //     console.log(res)
-    //   },
-    //   fail(res){
-    //     console.log('error');
-    //     console.log(res);
-    //   }
-    // })
   },
   /**
    * 生命周期函数--监听页面初次渲染完成
